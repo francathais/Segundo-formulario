@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saude</title>
+
+    <style>
+     
+    body{
+
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, rgb(50,153,204), rgb(0,0,156));
+
+    }
+
+    .box{
+            color:white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0,0,0,0.6);
+            padding: 15px; 
+            border-radius: 9px;
+            width: 30%;
+       }
+
+       fieldset{
+           border: 3px solid dodgerblue;
+       }
+
+       legend{
+           border: 1px solid rgb(255, 203, 30);
+           padding: 10px;
+           text-align: center;
+           background-color: rgb(255, 184, 30);
+           border-radius: 8px;
+       }
+
+       .inputBox{
+           position: relative;
+       }
+
+       .inputUser{
+           background: none;
+           border: none;
+           border-bottom: 1px solid white;
+           outline: none;
+           color: white;
+           font-size: 15px;
+           width: 100%;
+           letter-spacing: 3px;
+       }
+
+       
+       .labelInput{
+           position:absolute;
+           top: 0px;
+           left: 0px;
+           pointer-events: none;
+           transition:.5s;
+       }
+
+       .inputUser:focus~.labelInput,
+       .inputUser:valid~.labelInput{
+           top: -20px;
+           font-size: 12px;
+           color: rgb(255, 165, 30);
+       }
+
+       #submit{
+           background-image: linear-gradient(to right, rgb(197, 161, 0), rgb(90,20,220));
+           width: 100%;
+           border: none;
+           padding: 16px;
+           color: white;
+           font-size: 15px;
+           cursor: pointer;
+           border-radius: 13px;
+       }
+    </style>
+</head>
+    
+    <body>
+
+        <div class="box"
+        <form action="">
+            <fieldset>
+                <legend><b>Pesquisa Saúde Pública</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required> 
+                    <label for="nome" class="labelInput">Nome completo do aluno</label
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required> 
+                    <label for="nome" class="labelInput">Nome do curso</label
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="disciplina_1" id="disciplina_1" class="inputUser" required> 
+                    <label for="disciplina_1" class="labelInput">Disciplina de interesse</label
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="disciplina_2" id="disciplina_2" class="inputUser" required> 
+                    <label for="disciplina_2" class="labelInput">Disciplina de interesse</label
+                </div>
+                <br><br>
+
+
+                <p>Universidade de Destino:</p>
+            <input type="radio" id="unesp" name="universidade" value="unesp" required>
+            <label for="unesp">UNESP</label> <br>
+            <input type="radio" id="unicamp" name="universidade" value="unicamp" required>
+            <label for="unicamp">UNICAMP</label> <br>
+            <input type="radio" id="outros" name="universidade" value="unifesp" required>
+            <label for="unifesp">UNIFESP</label>
+            <br><br>
+
+                
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required> 
+                    <label for="nome"class="labelInput">E-mail USP </label
+                </div>
+                <br><br>
+    
+                <div class="inputBox">
+                    <input type="telefone" name="telefone" id="telefone" class="inputUser" required> 
+                    <label for="nome" class="labelInput">Contato</label
+                </div>
+                <br> <br> <br>
+
+                <div class="inputBox">
+                    <label for="data"><b>Data de finalização:</b></label>
+                    <input type="date" name="data" id="data" class="inputUser" required>
+                    </div>
+                    <br><br>
+
+                <p>Parecer da Comissão de Graduação</p>
+            <input type="radio" id="deferido" name="parecer" value="deferido" required>
+            <label for="deferido">Deferido</label> 
+            <input type="radio" id="indeferido" name="parecer" value="indeferido" required>
+            <label for="indeferido">Indeferido</label> <br>
+            
+        </form>
+
+    </body>
+
+    </html>
